@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.VacationView.CreateVacationView">
+   <children>
+      <Label layoutX="150.0" layoutY="12.0" text="EveryVaction4U">
+         <font>
+            <Font name="Gabriola" size="64.0" />
+         </font></Label>
+      <Label layoutX="25.0" layoutY="95.0" text="From Date">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="136.0" text="To Date">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="182.0" text="Destination">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="222.0" text="Price">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="261.0" text="Flight Company">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="284.0" layoutY="95.0" text="Number of tickets">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDestination" layoutX="121.0" layoutY="175.0" />
+      <TextField fx:id="txtPrice" layoutX="121.0" layoutY="220.0" />
+      <TextField fx:id="txtFlightCompany" layoutX="122.0" layoutY="260.0" />
+      <DatePicker fx:id="fromDate" layoutX="121.0" layoutY="94.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="toDate" layoutX="121.0" layoutY="133.0" prefHeight="25.0" prefWidth="149.0" />
+      <CheckBox fx:id="includesHotel" layoutX="312.0" layoutY="220.0" mnemonicParsing="false" onAction="#hotelSelected" text="Includes Hotel">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="includesBags" layoutX="456.0" layoutY="220.0" mnemonicParsing="false" text="Includes Bags">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </CheckBox>
+      <ChoiceBox fx:id="numberOfTickets" layoutX="436.0" layoutY="94.0" prefWidth="150.0" />
+      <Label fx:id="lblhotelRate" layoutX="353.0" layoutY="178.0" text="Hotel Rate">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="hotelRate" layoutX="440.0" layoutY="178.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="vacationKind" layoutX="438.0" layoutY="137.0" prefWidth="150.0" />
+      <Label layoutX="329.0" layoutY="136.0" text="Vacation Kind">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="196.0" layoutY="339.0" mnemonicParsing="false" onAction="#backOrigin" text="Back">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="submit" layoutX="404.0" layoutY="336.0" mnemonicParsing="false" onAction="#submit" text="Submit">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="357.0" layoutY="257.0" text="Seller Type">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="SellerKind" layoutX="442.0" layoutY="254.0" prefWidth="150.0" />
+      <Label layoutX="23.0" layoutY="303.0" text="from country">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFromCountry" layoutX="121.0" layoutY="296.0" />
+   </children>
+</AnchorPane>
