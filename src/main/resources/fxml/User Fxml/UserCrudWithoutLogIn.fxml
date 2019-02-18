@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="360.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.UserView.UserCrudView">
+    <children>
+        <Button fx:id="update" disable="true" layoutX="120.0" layoutY="115.0" mnemonicParsing="false" onAction="#updateWindow" prefHeight="46.0" prefWidth="140.0" styleClass="welcome" text="Update User" visible="false" />
+        <Button fx:id="delete" disable="true" layoutX="309.0" layoutY="113.0" mnemonicParsing="false" onAction="#DeleteWindow" prefHeight="46.0" prefWidth="140.0" styleClass="welcome" text="Delete User" visible="false" />
+        <Button fx:id="read" layoutX="220.0" layoutY="137.0" mnemonicParsing="false" onAction="#searchWindow" prefHeight="46.0" prefWidth="140.0" styleClass="welcome" text="Search User">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Button>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="22.0" prefHeight="79.0" prefWidth="373.0" text="EveryVaction4U">
+            <font>
+                <Font name="Gabriola" size="64.0" />
+            </font></Label>
+      <Button fx:id="backUserCrudNoLogIn" layoutX="255.0" layoutY="264.0" mnemonicParsing="false" onAction="#backToOrigin" prefHeight="30.0" prefWidth="72.0" text="Back">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

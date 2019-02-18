@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.VacationView.CrudVacationLogIn">
+   <children>
+      <Label layoutX="151.0" layoutY="39.0" text="EveryVaction4U">
+         <font>
+            <Font name="Gabriola" size="64.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreateVacation" layoutX="93.0" layoutY="155.0" mnemonicParsing="false" onAction="#createWindow" styleClass="welcome" text="Create Vacation">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnDeleteVacation" layoutX="138.0" layoutY="228.0" mnemonicParsing="false" onAction="#DeleteWindow" styleClass="welcome" text="Delete Vacation">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="263.0" layoutY="340.0" mnemonicParsing="false" onAction="#backOrigin" styleClass="welcome" text="Back">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font></Button>
+      <Button fx:id="btnDisplayVacations" layoutX="324.0" layoutY="154.0" mnemonicParsing="false" onAction="#DisplayWindow" styleClass="welcome" text="Display Vacations For Sale">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInbox" layoutX="324.0" layoutY="228.0" mnemonicParsing="false" onAction="#inboxWindow" styleClass="welcome" text="Inbox">
+         <font>
+            <Font name="Gabriola" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

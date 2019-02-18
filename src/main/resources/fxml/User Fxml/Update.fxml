@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.UserView.UpdateView">
+    <children>
+        <Label fx:id="WantedField" layoutX="24.0" layoutY="121.0" prefHeight="45.0" prefWidth="167.0" styleClass="label" text="Please choose field for edit:" visible="true">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="pass" layoutX="18.0" layoutY="245.0" prefHeight="45.0" prefWidth="110.0" styleClass="label" text="New Password:" visible="false">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="verify" layoutX="18.0" layoutY="283.0" prefHeight="45.0" prefWidth="110.0" styleClass="label" text="Verify Password:" visible="false">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="Date" disable="true" layoutX="124.0" layoutY="219.0" visible="false" />
+        <Button fx:id="back" layoutX="268.0" layoutY="400.0" mnemonicParsing="false" onAction="#backOrigin" text="Back">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Button>
+        <ComboBox fx:id="comboBox" disable="false" layoutX="180.0" layoutY="132.0" onAction="#comboBoxChoice" prefWidth="150.0" visible="true" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="34.0" text="EveryVaction4U">
+            <font>
+                <Font name="Gabriola" size="64.0" />
+            </font>
+        </Label>
+        <TextField fx:id="newValue" layoutX="124.0" layoutY="219.0" visible="false" />
+        <TextField fx:id="newPass" layoutX="124.0" layoutY="257.0" visible="false" />
+        <TextField fx:id="verifyPass" layoutX="125.0" layoutY="294.0" visible="false" />
+        <Button fx:id="btnUpdate" disable="true" layoutX="290.0" layoutY="213.0" mnemonicParsing="false" onAction="#checkAndUpdate" styleClass="welcome" text="Update" visible="false">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="Value" layoutX="16.0" layoutY="211.0" prefHeight="45.0" prefWidth="103.0" styleClass="label" text="New" visible="false">
+            <font>
+                <Font name="Gabriola" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
